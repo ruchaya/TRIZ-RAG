@@ -1,0 +1,12 @@
+[project]
+name = "local-triz-plf"
+version = "0.1.0"
+description = "Offline-first, evidence-grounded TRIZ-RAG for precision livestock farming"
+requires-python = ">=3.11"
+dependencies = ["pandas>=2.2", "numpy>=2.0", "scikit-learn>=1.5", "pydantic>=2.0", "PyYAML>=6.0"]
+
+[project.scripts]
+local-triz = "local_triz.cli:main"
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]

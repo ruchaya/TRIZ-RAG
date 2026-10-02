@@ -1,0 +1,14 @@
+name: triz-rag-plf
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - pandas
+  - numpy
+  - scikit-learn
+  - scipy
+  - pydantic
+  - pyyaml
+  - openpyxl
+  - matplotlib
+  - pip

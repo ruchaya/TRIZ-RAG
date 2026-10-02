@@ -1,0 +1,36 @@
+{
+  "repository": "Evidence-grounded TRIZ-RAG for Precision Livestock Farming",
+  "release_stage": "research package / exploratory benchmark",
+  "version": "0.1.0",
+  "benchmark_problems": 26,
+  "review_corpus_target": {
+    "publications": 1594,
+    "patents": 3239,
+    "total": 4833,
+    "years": "2006-2025"
+  },
+  "controlled_generation": {
+    "S1_outputs": 390,
+    "S2_outputs": 390,
+    "S3_outputs": 390,
+    "S4_outputs": 390,
+    "S3_valid_runs": 78,
+    "S4_valid_runs": 78
+  },
+  "warnings": [
+    "Archived exploratory retrieval was not executed on the strict frozen 4,833-record review corpus.",
+    "Development-only retrieval relevance labels are simulated rater profiles, not human expert validation.",
+    "No GGUF model weights are distributed in this repository.",
+    "Repository-wide code/data licensing remains pending."
+  ],
+  "release_version": "0.2.0",
+  "frozen_corpus_retrieval_rerun": {
+    "status": "completed_retrieval_only",
+    "records": 4833,
+    "publications": 1594,
+    "patents": 3239,
+    "period": "2006-2025",
+    "generation_rerun": "not_completed",
+    "path": "results/retrieval/frozen_4833"
+  }
+}
