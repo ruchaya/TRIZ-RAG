@@ -19,12 +19,6 @@ The repository is designed for **auditability first**: retrieved identifiers, ex
 - **Worked TC-14 example** showing a retrieval failure mode and the limits of downstream TRIZ prompting.
 - **Machine-readable result summaries** and scripts to regenerate them.
 
-## Important scientific boundary
-
-The archived exploratory retrieval run did **not** use the final frozen 2006-2025 review subset exactly. The broader source files contain 1,738 publication records and 3,793 patent records. Filtering `Year` to 2006-2025 yields exactly **1,594 publications + 3,239 patents = 4,833 records**. A confirmatory manuscript release should rebuild the index and repeat the benchmark on those 4,833 records.
-
-The workbook `results/retrieval/Expert_labelled_retrieval_metrics.xlsx` contains a **development-only stress test with simulated Andrea/Alexey rater profiles**. It is included to reproduce metric calculations and must not be represented as human expert validation. Human-adjudicated relevance labels and blinded engineering-quality scores remain a separate validation stage.
-
 ## Repository layout
 
 ```text
@@ -137,7 +131,3 @@ A stored identifier and exact quote establish provenance only. They do not by th
 ## Citation and release metadata
 
 `CITATION.cff.template` is provided as a template. Complete the final author list, repository DOI, release date and article DOI before publication. Repository-wide licensing is intentionally left pending in `LICENSE_PENDING.md` until code and data reuse terms are selected by the authors.
-
-## Frozen-corpus sensitivity rerun
-
-Version 0.2.0 adds a retrieval-only sensitivity rerun on the exact review-defined 4,833-record corpus (1,594 publications + 3,239 patents; 2006–2025). The rerun is stored in `results/retrieval/frozen_4833/`. The archived S1–S4 generation experiments were **not** rerun on the new packet, so the two experiment states are kept separate.
